@@ -10,6 +10,8 @@
 	justify-content: center;
 	width: 300vw;
 	height: 500px;
+	animation-duration: 10s;
+	animation-name: slidein;
 }
 
 .slide1 {
@@ -28,4 +30,19 @@
 	flex-basis: 100vw;
 	background: green;
 	height: 500px;
+}
+
+@keyframes slidein {
+  
+  0% {
+    margin-left: -0vw;
+  }
+
+  50% {
+    margin-left: -100vw;
+  }
+
+  100% {
+    margin-left: -200vw;
+  }
 }
